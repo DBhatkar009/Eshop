@@ -23,7 +23,7 @@
               "apps/admin/src/favicon.ico",
               "apps/admin/src/assets"
             ],
-            "styles": [
+            "styles": ["node_modules/bootstrap/scss/bootstrap.scss",
               "apps/admin/src/styles.scss"
             ],
             "scripts": []
@@ -149,7 +149,7 @@
               "apps/ngshop/src/favicon.ico",
               "apps/ngshop/src/assets"
             ],
-            "styles": [
+            "styles": ["node_modules/bootstrap/scss/bootstrap.scss",
               "apps/ngshop/src/styles.scss"
             ],
             "scripts": [
