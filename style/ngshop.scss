@@ -2,9 +2,14 @@
 @import './base/color.scss';
 @import './base/fonts.scss';
 @import './base/mixins.scss';
-@import './base/configuration.scss';
 
-@import '~bootstrap/scss/bootstrap.scss';
+
+//libreres
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/lara-light-indigo/theme.css';
+@import '~primeng/resources/primeng.min.css';
+@import '~primeflex/primeflex.css';
+@import './base/configuration.scss';
 
 //pages
 @import './app/shop/pages/home-page.scss';
