@@ -15,6 +15,7 @@
     width: 175px;
     background-color: black;
     height: 100%;
+    top: 0;
 
 
     .logo {
@@ -53,9 +54,16 @@
             float: left;
           }
 
+          &.logout {
+            color: var(--blue-400);
+          }
+
         }
       }
       }
     }
+  }
+  &-page {
+    padding: 15px;
   }
 }
