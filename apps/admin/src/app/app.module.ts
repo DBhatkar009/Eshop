@@ -10,8 +10,10 @@ import { CategoriesListComponent } from './categories/categories-list/categories
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { ToolbarModule } from 'primeng/toolbar';
+import { TableModule } from 'primeng/table';
+import { CategoriesFormComponent } from './categories-form/categories-form.component';
 
-const UX_MODULE = [CardModule, ButtonModule, ToolbarModule];
+const UX_MODULE = [CardModule, ButtonModule, ToolbarModule, TableModule];
 
 const routes: Routes = [
   {
@@ -26,12 +28,16 @@ const routes: Routes = [
         path: 'categories',
         component: CategoriesListComponent
       },
+      {
+        path: 'categories/form',
+        component: CategoriesFormComponent
+      },
     ]
   }
 ];
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, ShellComponent, SidebarComponent, CategoriesListComponent],
+  declarations: [AppComponent, DashboardComponent, ShellComponent, SidebarComponent, CategoriesListComponent, CategoriesFormComponent],
   imports: [BrowserModule, RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
     ...UX_MODULE,
   ],
