@@ -12,8 +12,9 @@ import { ButtonModule } from 'primeng/button';
 import { ToolbarModule } from 'primeng/toolbar';
 import { TableModule } from 'primeng/table';
 import { CategoriesFormComponent } from './categories-form/categories-form.component';
+import { InputTextModule } from 'primeng/inputtext';
 
-const UX_MODULE = [CardModule, ButtonModule, ToolbarModule, TableModule];
+const UX_MODULE = [CardModule, ButtonModule, ToolbarModule, TableModule, InputTextModule];
 
 const routes: Routes = [
   {

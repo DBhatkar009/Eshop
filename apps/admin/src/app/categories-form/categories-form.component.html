@@ -1,17 +1,16 @@
 <div class="admin-page">
   <p-card header="categories-form" subheader="list of headers">
-    <div class="p-grid">
-      <div class="p-col-12">
+    <div class="grid">
+      <div class="col">
         <p-toolbar>
-          <!-- <div class="p-toolbar-group-right"></div> -->
+          <div class="p-toolbar-group-right"></div>
           <div class="p-toolbar-group-left">
-            <p-button label="New" icon="pi pi-plus" Class="p-button-success p-mr-3">
+            <p-button label="New" icon="pi pi-plus" styleClass="p-button-success mr-3">
 
             </p-button>
 
-          </div>
-          <div class="p-toolbar-group-left">
-            <p-button label="Cancel" icon="pi pi-times" Class="p-button-success">
+
+            <p-button label="Cancel" icon="pi pi-arrow-circle-left" styleClass="p-button-secondary">
 
             </p-button>
           </div>
@@ -19,11 +18,22 @@
       </div>
     </div>
 
-    <div class="p-grid">
-      <div class="p-col-12">
-
+    <div class="grid">
+      <div class="col">
+        <div class="card">
+          <h5>Vertical and Grid</h5>
+          <div class="p-fluid p-formgrid grid">
+            <div class="field col">
+              <label for="firstname2">Firstname</label>
+              <input id="firstname2" type="text" pInputText>
+            </div>
+            <div class="field col">
+              <label for="lastname2">Lastname</label>
+              <input id="lastname2" type="text" pInputText>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
   </p-card>
 </div>
