@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -13,8 +14,11 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { TableModule } from 'primeng/table';
 import { CategoriesFormComponent } from './categories-form/categories-form.component';
 import { InputTextModule } from 'primeng/inputtext';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import { SidebarModule } from 'primeng/sidebar';
 
-const UX_MODULE = [CardModule, ButtonModule, ToolbarModule, TableModule, InputTextModule];
+const UX_MODULE = [BrowserAnimationsModule, CardModule, ButtonModule, ToolbarModule, TableModule, InputTextModule, MatButtonModule, MatInputModule, SidebarModule];
 
 const routes: Routes = [
   {
