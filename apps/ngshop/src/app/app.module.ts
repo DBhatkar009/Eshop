@@ -10,6 +10,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from './material/material.module';
 
 const routes: Routes = [{ path: '', component: HomePageComponent },
 { path: 'products', component: ProductListComponent }];
@@ -22,6 +23,7 @@ const routes: Routes = [{ path: '', component: HomePageComponent },
     UiModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

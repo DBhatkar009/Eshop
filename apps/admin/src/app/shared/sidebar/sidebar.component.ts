@@ -1,3 +1,4 @@
+/* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sidebar.component.html'
 })
 export class SidebarComponent implements OnInit {
+  public sidebarVisible = false;
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  constructor() {
+  };
 
-  constructor() { }
 
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   ngOnInit(): void {
   }
+
 
 }
